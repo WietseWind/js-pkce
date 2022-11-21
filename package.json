@@ -1,12 +1,12 @@
 {
-  "name": "js-pkce",
-  "version": "1.2.1",
-  "description": "A package that makes using the OAuth2 PKCE flow easier",
+  "name": "xumm-js-pkce",
+  "version": "1.0.0",
+  "description": "A package that makes using the OAuth2 PKCE (+Implicit support) flow easier",
   "main": "dist/PKCE.js",
   "types": "dist/PKCE.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bpedroza/js-pkce.git"
+    "url": "git+https://github.com/XRPL-Labs/xumm-js-pkce.git"
   },
   "scripts": {
     "build": "tsc",
@@ -14,7 +14,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest ./tests",
-    "prepare": "npm run build",
+    "prepare": "npm run build && npm run browserify",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -27,7 +27,7 @@
     "oauth2",
     "pkce"
   ],
-  "author": "Bryan Pedroza",
+  "author": "Bryan Pedroza, extended by Wietse Wind <w@xrpl-labs.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/crypto-js": "^3.1.47",
@@ -47,9 +47,9 @@
     "crypto-js": "^4.0.0"
   },
   "bugs": {
-    "url": "https://github.com/bpedroza/js-pkce/issues"
+    "url": "https://github.com/XRPL-Labs/xumm-js-pkce/issues"
   },
-  "homepage": "https://github.com/bpedroza/js-pkce/#readme",
+  "homepage": "https://github.com/XRPL-Labs/xumm-js-pkce/#readme",
   "files": [
     "dist/**/*"
   ]
