@@ -1,6 +1,6 @@
 {
   "name": "xumm-js-pkce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that makes using the OAuth2 PKCE (+Implicit support) flow easier",
   "main": "dist/PKCE.js",
   "types": "dist/PKCE.d.ts",
